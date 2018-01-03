@@ -1,1 +1,28 @@
+/* Image Main Styles */
+img {
+  display: inline-block;
+  font-family: Arial, sans serif;
+  font-size: 0.7em;
+  margin: 0 0 30px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+}
 
+img:after {
+  background-color: #f0f0f0;
+  background-image: url(noimage.png);
+  background-position: 15px 10px;
+  background-repeat: no-repeat;
+  background-size: 10%;
+  border: 1px dashed #888888;
+  content: "" attr(alt) " Not Found";
+  display: inherit;
+  left: 0;
+  min-width: 200px;
+  padding: 10px 20px 10px 45px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
