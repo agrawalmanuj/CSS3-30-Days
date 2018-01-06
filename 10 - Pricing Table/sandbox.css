@@ -157,4 +157,13 @@
     overflow: hidden;
     white-space: nowrap;
   }
+
+  .pricing-footer {
+    margin-top: 0;
+  }
+
+  .pricing-popular .pricing-header,
+  .pricing-popular .pricing-footer {
+    padding-top: 30px;
+  }
 }
