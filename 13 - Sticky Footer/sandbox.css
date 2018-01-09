@@ -1,0 +1,23 @@
+/* Page CSS */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.page-content {
+  min-height: 100%;
+  margin-bottom: -120px;
+}
+
+.page-content::after {
+  content: "";
+  display: block;
+}
+
+/* Sticky Footer */
+
+footer,
+.page-content::after {
+  height: 120px;
+}
