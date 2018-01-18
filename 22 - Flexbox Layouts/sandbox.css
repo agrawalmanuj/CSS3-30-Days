@@ -1,0 +1,120 @@
+/* Flex Layout #1 */
+.layout1 main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.layout1 article {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 58%;
+          flex: 1 58%;
+  margin-right: 2%;
+}
+
+/* Flex Layout #2 */
+.layout2 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.layout2 header nav {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-left: 2%;
+}
+
+.layout2 main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.layout2 article {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 56%;
+          flex: 1 56%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.layout2 aside.sidenav,
+.layout2 aside.sidebar {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 20%;
+          flex: 1 20%;
+}
+
+/* Flex Layout #3 */
+.layout3 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.layout3 header nav {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 2%;
+}
+
+.layout3 .articles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.layout3 article {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 0 2%;
+}
+
+.layout3 article:first-child,
+.layout3 article:last-child {
+  margin: 0;
+}
+
+/* Responsive Queries */
+
+@media screen and (max-width: 768px) {
+
+  .layout1 main,
+  .layout1 article,
+  .layout1 aside,
+  .layout1 header,
+  .layout1 .logo,
+  .layout1 .sidenav,
+  .layout1 .sidebar,
+  .layout1 .articles,
+  .layout2 main,
+  .layout2 article,
+  .layout2 aside,
+  .layout2 header,
+  .layout2 .logo,
+  .layout2 .sidenav,
+  .layout2 .sidebar,
+  .layout2 .articles,
+  .layout3 main,
+  .layout3 article,
+  .layout3 aside,
+  .layout3 header,
+  .layout3 .logo,
+  .layout3 .sidenav,
+  .layout3 .sidebar,
+  .layout3 .articles {
+    display: block;
+    float: none;
+    width: 100%;
+    margin: 0 0 2%;
+  }
+
+}
